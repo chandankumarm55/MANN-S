@@ -1,0 +1,64 @@
+/* General navbar styles */
+
+.navbar-custom {
+    padding: 0.5rem 1rem;
+}
+
+
+/* Adjust brand margin */
+
+.navbar-brand-custom {
+    margin-right: auto;
+}
+
+
+/* Navbar link styles */
+
+.navbar-nav .nav-item .nav-link {
+    margin-right: 20px;
+    color: white !important;
+    font-size: larger;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* Adjustments for smaller screens */
+
+@media (max-width: 950px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 90%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        /* Add a blur effect by using semi-transparent background */
+        backdrop-filter: blur(10px);
+        /* Apply blur */
+        padding: 10px;
+        /* Add some padding */
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-nav .nav-item .nav-link {
+        margin-right: 10px;
+        /* Reduce margin on smaller screens */
+        font-size: 1.2rem;
+        /* Reduce text size on smaller screens */
+        margin-bottom: 10px;
+        /* Add margin to space out links vertically */
+    }
+}
+
+
+/* Reduce gap between items when collapsed on small screens */
+
+.navbar-nav.gap-4 .nav-item {
+    margin-right: 0;
+}
+
+.navbar-nav.gap-4 .nav-item:not(:last-child) {
+    margin-bottom: 10px;
+}

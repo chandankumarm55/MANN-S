@@ -1,0 +1,105 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the content horizontally */
+    justify-content: center;
+    /* Center the content vertically */
+    text-align: center;
+    /* Center text */
+    padding: 50px 20px;
+    /* Add padding for spacing */
+    /* Optional: Add a semi-transparent background */
+    color: #fff;
+    /* Text color */
+}
+
+.banner h1 {
+    font-size: 3rem;
+    /* Large heading */
+    font-weight: bold;
+    /* Make the heading bold */
+    margin-bottom: 20px;
+    /* Space below the heading */
+    text-transform: uppercase;
+    /* Uppercase text */
+    letter-spacing: 3px;
+    /* Space between letters */
+}
+
+.banner p {
+    font-size: 1.2rem;
+    /* Larger paragraph text */
+    line-height: 1.6;
+    /* Space between lines */
+    max-width: 800px;
+    /* Limit the width of the paragraph */
+    margin-bottom: 30px;
+    /* Space below the paragraph */
+    font-weight: 300;
+    /* Lighter text */
+}
+
+.banner button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 10px;
+    /* Space between buttons */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Button text color */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth background color change */
+}
+
+.banner button:hover {
+    background-color: #ed4545;
+    color: white;
+    /* Darker color on hover */
+}
+
+.banner .uncheckedone {
+    background-color: white;
+    color: rgb(237, 148, 163);
+}
+
+.banner .checkedone {
+    background-color: rgb(237, 148, 163);
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .banner h1 {
+        font-size: 4rem;
+        /* Increase heading size on medium screens */
+    }
+    .banner p {
+        font-size: 1.5rem;
+        /* Increase paragraph size on medium screens */
+    }
+    .banner button {
+        font-size: 1.2rem;
+        /* Increase button text size on medium screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    .banner h1 {
+        font-size: 5rem;
+        /* Even larger heading on large screens */
+    }
+    .banner p {
+        font-size: 1.8rem;
+        /* Even larger paragraph text on large screens */
+    }
+    .banner button {
+        font-size: 1.5rem;
+        /* Increase button text size on large screens */
+        padding: 15px 30px;
+        /* Larger buttons on large screens */
+    }
+}

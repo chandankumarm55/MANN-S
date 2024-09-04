@@ -1,0 +1,12 @@
+.home {
+    background-image: url('https://img.freepik.com/free-photo/young-beautiful-asian-woman-with-athletic-body-doing-push-ups-modern-fitness-center_74952-2516.jpg?size=626&ext=jpg&ga=GA1.1.1242073879.1725195994&semt=ais_hybrid');
+    /* Corrected path and syntax  https://img.freepik.com/premium-photo/dynamic-portrait-young-sportive-woman-running-with-jump-isolated-purple-background-neon-with-mixed-lights_155003-45928.jpg*/
+    background-size: cover;
+    /* Ensures the image covers the entire area */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    min-height: 100vh;
+    /* Ensures the home section covers the full viewport height */
+}
