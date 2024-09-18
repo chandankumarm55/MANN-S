@@ -25,17 +25,42 @@
 
 /* Adjustments for smaller screens */
 
+
+/* Adjustments for smaller screens */
+
+
+/* Remove margin/padding from the toggle button */
+
+.navbar-toggler {
+    margin-right: 0;
+    /* Remove margin from the right side */
+    padding-right: 0;
+    /* Remove padding from the right side */
+    padding-left: 0;
+    /* Adjust padding on the left if needed */
+}
+
+
+/* Adjustments for smaller screens */
+
+@media (max-width: 950px) {
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem;
+        /* You can adjust these values to fit your needs */
+    }
+}
+
 @media (max-width: 950px) {
     .navbar-collapse {
         position: absolute;
         top: 90%;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.7);
-        /* Add a blur effect by using semi-transparent background */
+        /* Semi-transparent background */
         backdrop-filter: blur(10px);
-        /* Apply blur */
-        padding: 10px;
-        /* Add some padding */
+        /* Add blur effect */
+        z-index: 1050;
+        /* Ensure the navbar appears above other content */
     }
     .navbar-nav {
         display: flex;
@@ -43,22 +68,7 @@
         align-items: center;
     }
     .navbar-nav .nav-item .nav-link {
-        margin-right: 10px;
-        /* Reduce margin on smaller screens */
         font-size: 1.2rem;
-        /* Reduce text size on smaller screens */
         margin-bottom: 10px;
-        /* Add margin to space out links vertically */
     }
-}
-
-
-/* Reduce gap between items when collapsed on small screens */
-
-.navbar-nav.gap-4 .nav-item {
-    margin-right: 0;
-}
-
-.navbar-nav.gap-4 .nav-item:not(:last-child) {
-    margin-bottom: 10px;
 }
