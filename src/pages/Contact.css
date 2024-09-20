@@ -1,0 +1,10 @@
+/* Background image for the entire Contact page */
+
+.contact-background {
+    background-image: url('https://www.shutterstock.com/shutterstock/photos/2249853239/display_1500/stock-photo-visit-to-a-psychologist-a-man-sits-on-a-couch-and-talks-to-a-psychotherapist-the-patient-is-2249853239.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    /* Full viewport height */
+}

@@ -1,13 +1,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css'; // Importing Animate.css for animations
+import './ContactUsComponent.css'; // Import custom CSS for blur effect
 
 const ContactUsComponent = () => {
     return (
         <div className="container">
             <div className="row justify-content-center">
-                <div className="col-12 col-md-8"> {/* Adjusted grid for 1 col on small and 2 cols on larger screens */ }
-                    <div className="card shadow-lg p-4 animate__animated animate__fadeInUp" style={ { backgroundColor: '#ffebf0', color: '#333' } }>
+                <div className="col-12 col-md-8">
+                    <div className="card shadow-lg p-4 blur-background animate__animated animate__fadeInUp">
                         <h2 className="text-center mb-4" style={ { color: '#ff69b4' } }>Contact Us</h2>
                         <p className="text-center fs-5">Join our community and start your journey to a healthier mind and happier life.</p>
                         <div className="text-center">

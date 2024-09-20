@@ -1,3 +1,20 @@
+/* Blurred background for the contact card */
+
+.blur-background {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* White background with transparency */
+    backdrop-filter: blur(10px);
+    /* Blur effect */
+    padding: 20px;
+    border-radius: 15px;
+    /* Soft edges */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+
+/* Fade-in animation */
+
 @keyframes fadeInUp {
     0% {
         opacity: 0;

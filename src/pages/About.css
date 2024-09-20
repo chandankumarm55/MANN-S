@@ -1,0 +1,13 @@
+/* Background image for the entire About page */
+
+.about-background {
+    background-image: url('https://i3.wp.com/www.thetalentedindian.com/wp-content/uploads/2023/05/TTI-Website-Images-2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    /* Full viewport height */
+}
+
+
+/* Wrapper to center the AboutUsComponent content */

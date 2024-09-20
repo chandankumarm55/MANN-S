@@ -1,12 +1,17 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import AboutUsComponent from '../components/AboutUsComponent';
+import './About.css'; // Import the updated CSS for the background
 
 const About = () => {
     return (
-        <div style={ { backgroundColor: "#f2f2f2" } }> {/* Example of a Bootstrap background class */ }
+        <div className='about-background'>
+
             <Navbar />
-            <AboutUsComponent />
+            <div className="content-wrapper">
+                {/* Content-wrapper will center the card content */ }
+                <AboutUsComponent />
+            </div>
         </div>
     );
 }

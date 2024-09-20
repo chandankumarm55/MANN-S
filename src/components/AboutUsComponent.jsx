@@ -4,11 +4,12 @@ import './AboutUsComponent.css'; // Import the custom CSS file for animations an
 
 const AboutUsComponent = () => {
     return (
+
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-lg-8">
-                    <div className="card shadow-lg">
-                        <div className="card-body p-5 about-card" style={ { backgroundColor: '#ffe4e1', color: '#333' } }>
+                    <div className="card shadow-lg blur-background"> {/* Apply the blur background class */ }
+                        <div className="card-body p-5 about-card" style={ { backgroundColor: 'transparent', color: '#333' } }>
                             <h2 className="text-center mb-4 animated-heading" style={ { color: '#ff69b4' } }>About Mann's</h2>
                             <p className="text-justify animated-text">
                                 At Mann’s, we believe in empowering individuals to lead peaceful and fulfilling lives. Our center is dedicated to mental well-being, offering personalized counseling sessions, meditation, dance therapy, and even pet therapy. Experience the power of holistic healing all in one place.
@@ -30,6 +31,7 @@ const AboutUsComponent = () => {
                 </div>
             </div>
         </div>
+
     );
 }
 

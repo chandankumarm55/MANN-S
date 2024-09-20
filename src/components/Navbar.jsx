@@ -12,10 +12,10 @@ const MyNavbar = () => {
 
     // Define styles based on the route
     const navbarBgColor = isHomeRoute ? 'transparent' : '#ff69b4'; // White theme for home, pink for other pages
-    const linkColor = isHomeRoute ? 'text-white' : 'text-pink'; // White links for home, dark text for others
+    const linkColor = isHomeRoute ? 'text-white' : 'text-white'; // White links for home, dark text for others
 
     return (
-        <Navbar bg="transparent" expand="lg" className="navbar-custom pr-2 pl-2" style={ { backgroundColor: navbarBgColor } }>
+        <Navbar bg="transparent" expand="lg" className="navbar-custom pr-2" style={ { backgroundColor: navbarBgColor } }>
             <Navbar.Brand href="/" className="navbar-brand-custom">
                 <img src={ isHomeRoute ? logo : pinkLogo } width="50" height="50" className="d-inline-block align-top" alt="Logo" />
             </Navbar.Brand>
