@@ -1,14 +1,15 @@
-import React from 'react'
-import ServiceCardsComponent from '../components/ServiceCard'
-import MyNavbar from '../components/Navbar'
+import React from 'react';
+import ServiceCardsComponent from '../components/ServiceCard';
+import MyNavbar from '../components/Navbar';
+import './service.css'; // Import the CSS file
 
 const Service = () => {
     return (
-        <div>
+        <div className="service-container">
             <MyNavbar />
             <ServiceCardsComponent />
         </div>
-    )
+    );
 }
 
-export default Service
+export default Service;

@@ -1,13 +1,13 @@
+/* Responsive blur background */
+
 .blur-background {
-    background-color: rgba(255, 255, 255, 0.7);
-    /* White background with transparency */
-    backdrop-filter: blur(10px);
-    /* Blur effect */
-    padding: 20px;
-    border-radius: 15px;
-    /* Soft edges */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    /* Smooth transitions for hover and effects */
 }
 
 
@@ -15,30 +15,109 @@
 
 .text-justify {
     text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
 }
 
 
-/* Add simple fade-in animations */
+/* Fade in and scale up animation */
 
-@keyframes fadeIn {
-    from {
+@keyframes fadeInWithScale {
+    0% {
         opacity: 0;
-        transform: translateY(20px);
+        transform: scale(0.8) translateY(30px);
     }
-    to {
+    100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: scale(1) translateY(0);
     }
 }
+
+
+/* Slide-in from left for headings */
+
+@keyframes fadeInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* Fade in and scale animation for card */
+
+@keyframes scaleUp {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+
+/* Headings animated with different motion */
 
 .animated-heading {
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeInFromLeft 1.2s ease-out;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+    font-weight: bold;
 }
+
+
+/* Text animations with scaling and delay */
 
 .animated-text {
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeInWithScale 1.2s ease-in-out 0.5s;
 }
 
+
+/* Card animation with scale */
+
 .about-card {
-    animation: fadeIn 1s ease-in-out;
+    animation: scaleUp 1.5s ease-in-out;
+}
+
+
+/* Button hover effect for interactivity */
+
+
+/* Responsive design - tablet and mobile adjustments */
+
+@media (max-width: 768px) {
+    .blur-background {
+        padding: 20px;
+    }
+    .animated-heading {
+        font-size: 2rem;
+        /* Smaller heading for mobile */
+        text-align: center;
+    }
+    .text-justify {
+        font-size: 1.1rem;
+        /* Slightly smaller text */
+        line-height: 1.5;
+    }
+    .about-card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .animated-heading {
+        font-size: 1.8rem;
+        /* Even smaller for small screens */
+    }
+    .text-justify {
+        font-size: 1rem;
+        /* Further reduce text size */
+    }
 }

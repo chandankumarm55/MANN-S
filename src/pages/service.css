@@ -1,0 +1,20 @@
+.service-container {
+    position: relative;
+    background-image: url('https://img.freepik.com/premium-photo/highquality-gym-scene-weights-exercise-equipment-dark-neonlit-warehouse_976564-10420.jpg?size=626&ext=jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    min-height: 100vh;
+    /* Set minimum height to the viewport height */
+    height: 100%;
+}
+
+
+/* Make it responsive for smaller screens */
+
+@media only screen and (max-width: 600px) {
+    .service-container {
+        background-size: contain;
+        background-position: top;
+    }
+}

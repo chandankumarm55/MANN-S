@@ -23,21 +23,19 @@
 }
 
 
-/* Adjustments for smaller screens */
-
-
-/* Adjustments for smaller screens */
-
-
 /* Remove margin/padding from the toggle button */
 
 .navbar-toggler {
     margin-right: 0;
-    /* Remove margin from the right side */
     padding-right: 0;
-    /* Remove padding from the right side */
     padding-left: 0;
-    /* Adjust padding on the left if needed */
+}
+
+
+/* Custom style for white hamburger icon */
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 
@@ -46,7 +44,6 @@
 @media (max-width: 950px) {
     .navbar-toggler {
         padding: 0.25rem 0.5rem;
-        /* You can adjust these values to fit your needs */
     }
 }
 
@@ -56,11 +53,8 @@
         top: 90%;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.7);
-        /* Semi-transparent background */
         backdrop-filter: blur(10px);
-        /* Add blur effect */
         z-index: 1050;
-        /* Ensure the navbar appears above other content */
     }
     .navbar-nav {
         display: flex;

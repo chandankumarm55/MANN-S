@@ -19,8 +19,8 @@ const MyNavbar = () => {
             <Navbar.Brand href="/" className="navbar-brand-custom">
                 <img src={ isHomeRoute ? logo : pinkLogo } width="50" height="50" className="d-inline-block align-top" alt="Logo" />
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav fw-bolder">
+            <Navbar.Toggle aria-controls="basic-navbar-nav" className='text-white bg-white' />
+            <Navbar.Collapse id="basic-navbar-nav fw-bolder" className='text-white ' >
                 <Nav className="ml-auto gap-4">
                     <Nav.Link href="/" className={ `fw-bolder fs-4 ${linkColor}` }>Home</Nav.Link>
                     <Nav.Link href="/about" className={ `fw-bolder fs-4 ${linkColor}` }>About</Nav.Link>

@@ -7,7 +7,6 @@ const Contact = () => {
     return (
         < div className='contact-background'> {/* Full-page background for Contact */ }
             <MyNavbar />
-
             <ContactUsComponent />
         </div>
     );
