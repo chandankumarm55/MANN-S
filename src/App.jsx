@@ -6,6 +6,9 @@ import Contact from './pages/Contact';
 import Service from './pages/Service';
 import Counseling from './pages/Counseling';
 import MyNavbar from './components/Navbar';
+import DanceToRelax from './pages/DanceToRelax';
+import PetSession from './pages/PetSession';
+import Meditation from './pages/Meditation';
 
 function App() {
   return (
@@ -17,9 +20,10 @@ function App() {
           <Route path='/about' exact element={ <About /> } />
           <Route path='/contact' exact element={ <Contact /> } />
           <Route path='/service' exact element={ <Service /> } />
-          <Route path='/service/Counseling' exact element={ <Counseling /> } />
-
-
+          <Route path='/Counseling' exact element={ <Counseling /> } />
+          <Route path='/dance-to-relax' exact element={ <DanceToRelax /> } />
+          <Route path='/pet-sessions' exact element={ <PetSession /> } />
+          <Route path='/meditation' exact element={ <Meditation /> } />
         </Routes>
       </div>
     </BrowserRouter>

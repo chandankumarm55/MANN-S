@@ -1,0 +1,60 @@
+/* Overlay to cover the entire screen with a dark background */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    z-index: 999;
+    /* Make sure the overlay is on top */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Modal dialog box */
+
+.modal-dialog {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    /* Make sure it's above the overlay */
+    position: relative;
+}
+
+
+/* Modal header */
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+
+/* Close button */
+
+.close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+.modal-body {
+    padding-top: 15px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}

@@ -1,9 +1,12 @@
 import React from 'react'
+import MyNavbar from '../components/Navbar'
+import CounselingComponent from '../components/CounselingComponent'
 
 const Counseling = () => {
     return (
-        <div>
-            Counseling
+        <div >
+            <MyNavbar />
+            <CounselingComponent />
         </div>
     )
 }
